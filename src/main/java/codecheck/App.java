@@ -10,10 +10,9 @@ public class App {
 			try {
 				ia[i] = Integer.parseInt(args[i]);
 
-				int a = ia[i].length();
 				byte[] bytes = ia[i].getBytes();
 
-				if  (a !=bytes.length) {
+				if  (ia[i].length() !=bytes.length) {
 					System.out.println("invalid");
 				} else {
 					if (0 <= ia[i] && ia[i] <= 1000) {
