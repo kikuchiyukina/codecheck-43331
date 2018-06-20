@@ -10,7 +10,8 @@ public class App {
 			try {
 				ia[i] = Integer.parseInt(args[i]);
 				if  (!Integer.toString(ia[i]).matches("^[0-9]*$")) {
-
+					System.out.println("invalid");
+				} else {
 					if (0 <= ia[i] && ia[i] <= 1000) {
 						if (ia[i] % 3 == 0 && Integer.toString(ia[i]).contains("3")) {
 							System.out.println("dumb");
@@ -24,7 +25,6 @@ public class App {
 					} else {
 						System.out.println("invalid");
 					}
-				}else {	System.out.println("invalid");
 				}
 				} catch (NumberFormatException e) {
 					System.out.println("invalid");
