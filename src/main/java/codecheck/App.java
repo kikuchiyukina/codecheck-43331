@@ -16,7 +16,7 @@ public class App {
 						} else if (ia[i] % 3 == 0) {
 							System.out.println("idiot");
 						} else if (Integer.toString(ia[i]).contains("3")) {
-							System.out.println("stupidt");
+							System.out.println("stupid");
 						} else {
 							System.out.println("smart");
 						}
