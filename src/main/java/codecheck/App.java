@@ -9,6 +9,7 @@ public class App {
 		for (int i = 0; i < args.length; i++) {
 			try {
 				ia[i] = Integer.parseInt(args[i]);
+				if (String.valueOf(ia[i]).getBytes().length < 2) {
 
 					if (0 <= ia[i] && ia[i] <= 1000) {
 						if (ia[i] % 3 == 0 && Integer.toString(ia[i]).contains("3")) {
@@ -23,6 +24,8 @@ public class App {
 					} else {
 						System.out.println("invalid");
 					}
+				}else {	System.out.println("invalid");
+				}
 				} catch (NumberFormatException e) {
 					System.out.println("invalid");
 			}
