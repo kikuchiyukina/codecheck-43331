@@ -14,13 +14,13 @@ public class App {
 			ia[i] = Integer.parseInt(args[i]);
 
 
-        if (0 <= ia || ia <= 1000) {
-		if (ia % 3 == 0|| Integer.toString(ia).contains("3")) {
+        if (0 <= ia[i] || ia[i] <= 1000) {
+		if (ia[i] % 3 == 0|| Integer.toString(ia[i]).contains("3")) {
 				System.out.println("dumb");
 
-			} else if (ia % 3 == 0) {
+			} else if (ia[i] % 3 == 0) {
 				System.out.println("idiot");
-			} else if (Integer.toString(ia).contains("3")) {
+			} else if (Integer.toString(ia[i]).contains("3")) {
 				System.out.println("stupidt");
 
 			} else {
