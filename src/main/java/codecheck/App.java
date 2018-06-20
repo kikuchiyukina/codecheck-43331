@@ -7,16 +7,20 @@ public class App {
 		//Scanner scan = new Scanner(System.in);
 
         // キーボードから整数の入力を受け取る
-        int score = Integer.parseInt(args);
+		int[] ia = new int[args.length];
+        //int score = Integer.parseInt(args);
 
-        //scan.close();
-        if (0 <= score || score <= 1000) {
-		if (score % 3 == 0|| Integer.toString(score).contains("3")) {
+		for (int i = 0; i < args.length; i++) {
+			ia[i] = Integer.parseInt(args[i]);
+
+
+        if (0 <= ia || ia <= 1000) {
+		if (ia % 3 == 0|| Integer.toString(ia).contains("3")) {
 				System.out.println("dumb");
 
-			} else if (score % 3 == 0) {
+			} else if (ia % 3 == 0) {
 				System.out.println("idiot");
-			} else if (Integer.toString(score).contains("3")) {
+			} else if (Integer.toString(ia)).contains("3")) {
 				System.out.println("stupidt");
 
 			} else {
@@ -26,5 +30,7 @@ public class App {
         	System.out.println("invalid");
         }
 
-	    }
+
+		}
+		}
 	}
