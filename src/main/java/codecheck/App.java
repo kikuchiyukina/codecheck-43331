@@ -7,7 +7,7 @@ public class App {
 		//Scanner scan = new Scanner(System.in);
 
         // キーボードから整数の入力を受け取る
-        int score = Integer.parselnt(args);
+        int score = Integer.parseInt(args);
 
         //scan.close();
         if (0 <= score || score <= 1000) {
