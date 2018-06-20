@@ -20,7 +20,7 @@ public class App {
 
 			} else if (ia % 3 == 0) {
 				System.out.println("idiot");
-			} else if (Integer.toString(ia)).contains("3")) {
+			} else if (Integer.toString(ia).contains("3")) {
 				System.out.println("stupidt");
 
 			} else {
