@@ -9,7 +9,7 @@ public class App {
 		for (int i = 0; i < args.length; i++) {
 			try {
 				ia[i] = Integer.parseInt(args[i]);
-				if  (Integer.toString(ia[i]).matches("^[0-9a-zA-Z]+$")) {
+				if  (!Integer.toString(ia[i]).matches("[0-9a-zA-Z]+$")) {
 					System.out.println("invalid");
 				} else {
 					if (0 <= ia[i] && ia[i] <= 1000) {
