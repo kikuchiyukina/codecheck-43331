@@ -9,7 +9,7 @@ public class App {
 		for (int i = 0; i < args.length; i++) {
 			try {
 				ia[i] = Integer.parseInt(args[i]);
-				if (String.valueOf(ia[i]).getBytes().length < 2) {
+				if  (!ia[i].matches("^[0-9]*$")) {
 
 					if (0 <= ia[i] && ia[i] <= 1000) {
 						if (ia[i] % 3 == 0 && Integer.toString(ia[i]).contains("3")) {
