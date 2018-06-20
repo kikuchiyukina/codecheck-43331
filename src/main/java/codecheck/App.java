@@ -14,8 +14,8 @@ public class App {
 			ia[i] = Integer.parseInt(args[i]);
 
 
-        if (0 <= ia[i] || ia[i] <= 1000) {
-		if (ia[i] % 3 == 0|| Integer.toString(ia[i]).contains("3")) {
+        if (0 <= ia[i] && ia[i] <= 1000) {
+		if (ia[i] % 3 == 0 && Integer.toString(ia[i]).contains("3")) {
 				System.out.println("dumb");
 
 			} else if (ia[i] % 3 == 0) {
