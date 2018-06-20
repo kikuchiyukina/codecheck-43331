@@ -4,12 +4,12 @@ package codecheck;
 public class App {
 	public static void main(String[] args) {
 
-		Scanner scan = new Scanner(System.in);
+		//Scanner scan = new Scanner(System.in);
 
         // キーボードから整数の入力を受け取る
-        int score = scan.nextInt();
+        int score = args;
 
-        scan.close();
+        //scan.close();
         if (0 <= score || score <= 1000) {
 		if (score % 3 == 0|| Integer.toString(score).contains("3")) {
 				System.out.println("dumb");
