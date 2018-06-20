@@ -10,7 +10,7 @@ public class App {
         int score = scan.nextInt();
 
         scan.close();
-        if (0 <= score <= 1000) {
+        if (0 <= score || score <= 1000) {
 		if (score % 3 == 0|| Integer.toString(score).contains("3")) {
 				System.out.println("dumb");
 
