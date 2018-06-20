@@ -11,6 +11,7 @@ public class App {
         //int score = Integer.parseInt(args);
 
 		for (int i = 0; i < args.length; i++) {
+			try {
 			ia[i] = Integer.parseInt(args[i]);
 
 
@@ -30,7 +31,9 @@ public class App {
         	System.out.println("invalid");
         }
 
-
+			}catch (NumberFormatException e) {
+				System.out.println("invalid");
+		    }
 		}
 		}
 	}
