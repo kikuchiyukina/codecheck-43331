@@ -10,7 +10,7 @@ public class App {
 			try {
 				ia[i] = Integer.parseInt(args[i]);
 				ib[i] = args[i];
-				byte[] bytes = Integer.toString(ia[i]).getBytes();
+				byte[] bytes = ib[i].getBytes();
 
 				if  (ib[i].length() != bytes.length) {
 					if (0 <= ia[i] && ia[i] <= 1000) {
