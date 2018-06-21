@@ -10,7 +10,7 @@ public class App {
 			try {
 				ia[i] = Integer.parseInt(args[i]);
 
-				byte[] bytes = (byte)ia[i].getBytes();
+				byte[] bytes = Integer.toString(ia[i]).getBytes();
 
 				if  (ia[i].length() !=bytes.length) {
 					System.out.println("invalid");
