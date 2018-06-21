@@ -12,9 +12,7 @@ public class App {
 
 				byte[] bytes = Integer.toString(ia[i]).getBytes();
 
-				if  (Integer.toString(ia[i]).length() == bytes.length) {
-					System.out.println("invalid");
-				} else {
+				if  (Integer.toString(ia[i]).length() != bytes.length) {
 					if (0 <= ia[i] && ia[i] <= 1000) {
 						if (ia[i] % 3 == 0 && Integer.toString(ia[i]).contains("3")) {
 							System.out.println("dumb");
@@ -28,10 +26,13 @@ public class App {
 					} else {
 						System.out.println("invalid");
 					}
-				}
+				} else {
+					System.out.println("invalid");
 				} catch (NumberFormatException e) {
 					System.out.println("invalid");
 			}
+		}
+
 		}
 	}
 }
