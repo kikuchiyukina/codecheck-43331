@@ -28,11 +28,12 @@ public class App {
 					}
 				} else {
 					System.out.println("invalid");
+				}
 				} catch (NumberFormatException e) {
 					System.out.println("invalid");
 			}
 		}
 
-		}
+
 	}
 }
