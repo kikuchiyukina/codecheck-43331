@@ -12,7 +12,7 @@ public class App {
 
 				byte[] bytes = Integer.toString(ia[i]).getBytes();
 
-				if  (Integer.toString(ia[i]).length() !=bytes.length) {
+				if  (Integer.toString(ia[i]).length() == bytes.length) {
 					System.out.println("invalid");
 				} else {
 					if (0 <= ia[i] && ia[i] <= 1000) {
