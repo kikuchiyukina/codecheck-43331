@@ -12,7 +12,7 @@ public class App {
 				ib[i] = args[i];
 				byte[] bytes = ib[i].getBytes();
 
-				if  (ib[i].length() != bytes.length) {
+				if  (ib[i].length() == bytes.length) {
 					if (0 <= ia[i] && ia[i] <= 1000) {
 						if (ia[i] % 3 == 0 && Integer.toString(ia[i]).contains("3")) {
 							System.out.println("dumb");
